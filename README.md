@@ -13,12 +13,15 @@ markdown
    ```bash
    git clone https://github.com/OpenSID/OpenDK.git project
 2. Jalankan Docker
+```bash
 docker-compose up -d --build
 
 3. Generate APP_KEY
+```bash
 docker exec -it opendk-app php artisan key:generate
 
 4. Migrasi database
+```bash
 docker exec -it opendk-app php artisan migrate --seed
 
 5. Akses aplikasi di browser: http://localhost:9011
